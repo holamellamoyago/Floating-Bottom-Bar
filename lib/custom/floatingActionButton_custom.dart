@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_bnb/pages/dashboard1_screen.dart';
+import 'package:flutter_bnb/pages/login_screen.dart';
 
 class CustomFloatingButton extends StatelessWidget {
   const CustomFloatingButton({
@@ -9,7 +9,7 @@ class CustomFloatingButton extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return FloatingActionButton.extended(
-        onPressed: ()=> Navigator.popAndPushNamed(context, DashBoard1.routename),
-        label: const Text('Ir al inicio'));
+        onPressed: ()=> Navigator.popAndPushNamed(context, LoginScreen.routename),
+        label: const Row(mainAxisAlignment: MainAxisAlignment.spaceBetween ,children: [Icon(Icons.home), SizedBox(width: 4,),Text('Ir al inicio')],));
   }
 }

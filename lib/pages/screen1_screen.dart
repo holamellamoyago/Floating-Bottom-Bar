@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_bnb/pages/dashboard1_screen.dart';
+import 'package:flutter_bnb/custom/floatingActionButton_custom.dart';
 
 class Screen1 extends StatelessWidget {
   static const routename = 'screen1_screen';
@@ -7,13 +7,14 @@ class Screen1 extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    // ignore: prefer_const_constructors
     return Scaffold(
       body: const SafeArea(
         child: Center(
           child: Text('Página 1'),
         ),
       ),
-      floatingActionButton: CustomFloatingButton(),
+      floatingActionButton: const CustomFloatingButton(),
     );
   }
 }

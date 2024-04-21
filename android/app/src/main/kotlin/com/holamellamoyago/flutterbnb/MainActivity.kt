@@ -1,4 +1,4 @@
-package com.example.flutter_bnb
+package com.holamellamoyago.flutterbnb
 
 import io.flutter.embedding.android.FlutterActivity
 
